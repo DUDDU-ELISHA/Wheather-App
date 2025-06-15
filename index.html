@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GFG App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <h1 style="color: rgb(186, 29, 218);">
+              Wheather App</h1>
+              <h3>Enter your Location🌎</h3>
+            <input type="text" id="location-input" placeholder="Enter city name">
+            <button id="search-button">Get Weather</button>
+
+            <div id="loading" style="display: none;">Loading...</div>
+            <div id="error" style="display: none; color: red;">Failed to fetch weather data.</div>
+
+            <div id="weather-display" class="animate__animated animate__fadeIn" style="display: none;">
+                <h3 id="city-name"></h3>
+                <p id="date"></p>
+                <img id="weather-icon" src="" alt="Weather Icon" style="width: 100px;">
+                <p id="temperature"></p>
+                <p id="condition"></p>
+                <p id="wind-speed"></p>
+                <p id="humidity"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
